@@ -8,10 +8,9 @@ const printHello=()=>{
 };
 
 const checkWeight = (wight)=>{
-    console.log(`Baggage weight : $(weight) kilograms`);
+    console.log(`Baggage weight : ${weight} kilograms`);
 };
 checkWeight(25);
 
-const multiply=(a,d)=>a*b;
+const multiply=(a,b)=>a*b;
 console.log(multiply(2,30));
-
