@@ -10,9 +10,4 @@ function areaSqr(w,l) {
     return w*l;
 }
 
-export {areaCircle,areaTriangle,areaSqr}
-
-import {areaCircle,areaSqr} from "./libArea.mjs";
-
-console.log(areaCircle(6));
-console.log(areaSqr(3,4));
+export {areaCircle,areaTriangle,areaSqr};
