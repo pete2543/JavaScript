@@ -1,21 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>โปรเเกรมคำนวณเกรดเฉลี่ย</title>
   
-        <h1>โปรเเกรมเเปลงเลขฐาน</h1>
-        <td>หน่วยกิต:
-        </td>
-        <input type="text"id="bb">
-        <td>เกรด</td>
-        <input type="text"id="bb2">
-      <button onclick='G()'>OK</button>
-        <textarea name="name" id="ww" cols="30" rows="10"></textarea>
-        <script src="app.js"></script>
+</head>
+
+<body background="img/13.jpg" >
+  <form action="">
+    <center>
+      <h1><img src="img/rioe.gif" ><span class="badge bg-secondary">โปรเเกรมคำนวณเกรดเฉลี่ย</span></h1>
+      <td>
+        <tr >หน่วยกิต:
+          <select id="credit_1" class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0">-</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3.0">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+          </select>
+        </tr>
+      </td>
+      <td>
+        <tr>เกรด
+          <select id="grade_1" class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="4.0">A</option>
+            <option value="3.5">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.5">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.5">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+          </select>
+        </tr>
+      </td>
+      <br>
+      <td>
+        <tr>หน่วยกิต:
+          <select id="credit_2"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0">-</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+          </select>
+        </tr>
+      </td>
+      <td>
+        <tr>เกรด
+          <select id="grade_2"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="4.0">A</option>
+            <option value="3.5">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.5">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.5">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+          </select>
+        </tr>
+      </td>
+      <br>
+      <td>
+        <tr>หน่วยกิต:
+          <select id="credit_3"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0">-</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+          </select>
+        </tr>
+      </td>
+      <td>
+        <tr>เกรด
+          <select id="grade_3"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="4.0">A</option>
+            <option value="3.5">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.5">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.5">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+          </select>
+        </tr>
+      </td>
+      <br>
+      <td>
+        <tr>หน่วยกิต:
+          <select id="credit_4"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0">-</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+          </select>
+        </tr>
+      </td>
+      <td>
+        <tr>เกรด
+          <select id="grade_4"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="4.0">A</option>
+            <option value="3.5">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.5">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.5">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+          </select>
+        </tr>
+      </td>
+      <br>
+      <td>
+        <tr>หน่วยกิต:
+          <select id="credit_5"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0">-</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+          </select>
+        </tr>
+      </td>
+      <td>
+        <tr>เกรด
+          <select id="grade_5"class="form-select-lg mb-2" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="4.0">A</option>
+            <option value="3.5">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.5">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.5">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.0">F</option>
+          </select>
+        </tr>
+        <br>
+      </td>
+      <td>
+        <tr>
+          <button type="button" class="btn btn-success" onclick='G()'>คำนวณ</button>
+          <input class="btn btn-primary" type="reset" value="ล้างข้อมูล">
+          <div class="container">
+            <br><img src="img/ppap.gif"><br>
+            <textarea class="" aria-label="With textarea" id="score"></textarea>
+            
+          </div>
+          <script src="app.js"></script>
+        </tr>
+      </td>
+    </center>
+  </form>
 </body>
+
 </html>

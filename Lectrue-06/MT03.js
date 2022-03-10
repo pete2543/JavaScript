@@ -9,7 +9,6 @@ function capToFront(str) {
       resultLower.push(w);
     }
   });
-
   return resultCapital.concat(resultLower).join("");
 }
 console.log(capToFront("hApPy"));
